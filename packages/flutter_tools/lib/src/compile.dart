@@ -182,6 +182,7 @@ List<String> buildModeOptions(BuildMode mode, List<String> dartDefines) {
       return <String>[
         '-Ddart.vm.profile=true',
         '-Ddart.vm.product=false',
+        '--enable-asserts',
       ];
     case BuildMode.release:
       return <String>[
